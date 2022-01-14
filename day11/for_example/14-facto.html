@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for 반복문 예제</title>
+</head>
+<body>
+    <script>
+        // 1부터 10까지의 곱
+        // let result = 1;
+        // let i = 1;       // 전역(global) 변수
+
+        // for(i = 1; i <= 4; i++){
+        //     result *= i;        // result = result * i;
+        //     console.log("i = " + i + ", result = " + result)        // 과정 확인 가능
+        // }
+
+        // document.write((i-1) + "! = " + result)          // (i-1) : i가 5일때 나오므로 1빼줘야함
+        
+        
+        let result = 1;
+
+        for(let i = 1; i <= 4; i++){
+            result *= i;
+            console.log("i = " + i + ", result = " + result)
+        }
+
+        document.write("4! = " + result)
+
+    </script>
+</body>
+</html>
