@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for 반복문 예제</title>
+</head>
+<body>
+    <script>
+        // 1부터 10까지의 홀수의 합계
+        let sum_v = 0;
+
+        for(let i = 1; i <= 10; i++){
+            if(i % 2 == 1){                         // if문 이용 n의 배수도 가능
+                sum_v += i;
+                document.write(i + " ")
+            }
+        }
+
+        document.write("<br>홀수 합계 : " + sum_v)
+
+    </script>
+</body>
+</html>
+
+<!-- 
+let sum_v;
+sum_v = sum_v + 1; 
+이 경우 위에서 let sum_v = 0; 초기화 해줘야함
+-->
