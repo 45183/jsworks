@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열의 함수 사용하기</title>
+</head>
+<body>
+    <h2>배열의 함수 사용하기</h2>
+
+    <script>
+        // 배열에 자료를 추가(맨 뒤) - push() 함수
+        var num = [1, 2, 3];
+
+        // 자료 추가
+        num.push(10);
+        num.push(20, 30);
+
+        // 자료 삭제(맨 뒤) - pop()
+        num.pop();              // 맨 뒤에 있던 30 삭제
+
+        // 출력
+        for(var i = 0; i < num.length; i++){
+            console.log(num[i]);
+            document.write(num[i] + " ");
+        }
+    </script>
+</body>
+</html>
