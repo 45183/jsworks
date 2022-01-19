@@ -1,0 +1,22 @@
+함수(function, method)
+
+
+function 함수이름(매개변수){
+    변수
+    명령문(if, for)
+}
+
+함수이름(매개변수) - 호출
+매개변수 - 입력
+
+
+
+function myAbs(x){
+    if(x<0)
+        return -x;
+    else 
+        return x;
+}
+
+let num = myAbs(-7);
+console.log(num);       : 7출력
