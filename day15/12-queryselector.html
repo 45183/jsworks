@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelector() 사용</title>
+</head>
+<body>
+    <p>이름 : <input type="text" id="myText" value="오상식" disabled></p>          <!--disabled :  읽기전용 (작성불가)-->
+    <p>클릭하면 이름이 변경됨</p>
+    <button onclick="myFunction()">클릭</button>
+
+    <script>
+        function myFunction(){
+            document.querySelector("#myText").value = "최정보";         // 태그, 클래스, 아이디 전부 가능
+            // document.getElementById("myText").value = "최정보";      // 아이디만 - # 사용x
+        }
+    </script>
+</body>
+</html>
