@@ -12,17 +12,15 @@
     <script>
         const now = new Date();
 
-        // 날짜
         document.write("년도 : " + now.getFullYear() + "<Br>");
         document.write("월 : " + now.getMonth() + 1 + "<Br>");
         document.write("일 : " + now.getDate() + "<Br>");
         document.write("요일 : " + now.getDay() + "<Br>");
 
-        // 시간
         document.write("시 : " + now.getHours() + "<Br>");
         document.write("분 : " + now.getMinutes() + "<Br>");
         document.write("초 : " + now.getSeconds() + "<Br>");
-        document.write("현재까지 시간 : " + Math.floor(now.getTime()/1000) + "초<Br>");     // 1970.1.1 자정부터 지금까지 밀리초(ms)로 반환
+        document.write("현재까지 시간 : " + Math.floor(now.getTime()/1000) + "초<Br>");   
     </script>
 </body>
 </html>

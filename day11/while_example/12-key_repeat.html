@@ -12,19 +12,18 @@
            'n'키를 입력하면 "반복 중단"을 출력하고 프로그램 종료 */
         while(true){
             let key = prompt("계속 반복할까요?", "y/n");
-            if(key == 'y' || key == 'Y'){               // y or Y
+            if(key == 'y' || key == 'Y'){  
                 alert("계속 반복");
             }
-            else if(key == 'n' || key == 'N'){          // n or N
+            else if(key == 'n' || key == 'N'){     
                 alert("반복 중단");
-                break;      // 빠져나옴
+                break; 
             }
             else{
                 alert("잘못 입력했습니다.")
             }
         }
         document.write("프로그램 종료!!")
-
     </script>
 </body>
 </html>

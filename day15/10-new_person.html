@@ -8,14 +8,13 @@
 </head>
 <body>
     <script>
-        // 생성자 함수(클래스) - 이름 대문자로 시작
         function Person(naming, age, isMerried){
-            this.naming = naming;           // 멤버 변수        파이썬에서는 self
+            this.naming = naming;         
             this.age = age;
             this.isMerried = isMerried;
 
             this.info = function(){
-                if(this.isMerried == true)                  // == true 생략가능
+                if(this.isMerried == true)                
                     document.write(this.naming + "은(는) 기혼입니다.");
                 else
                     document.write(this.naming + "은(는) 미혼입니다.");    

@@ -10,18 +10,16 @@
     <h2>지역 변수의 유효 범위</h2>
 
     <script>
-        // 전역 변수 생성 - 메인 영역에서 생성 및 사용
-        // 소멸 - 프로그램이 종료될 때 소멸함
-        let x = 1;          // 전역(global) 변수
+        let x = 1;         
 
         function oneUp(){
-            x ++;               // x = x+1
+            x ++;           
             return x;
         }
 
-        document.write(oneUp() + "<br>");        // 2
-        document.write(oneUp() + "<br>");        // 3
-        document.write(oneUp() + "<br>");        // 4
+        document.write(oneUp() + "<br>");     
+        document.write(oneUp() + "<br>");      
+        document.write(oneUp() + "<br>");     
 
         document.write(x);
     </script>

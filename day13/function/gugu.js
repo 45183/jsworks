@@ -6,4 +6,4 @@ function gugudan(dan){
     }
 }
 
-gugudan(6);         // 호출
+gugudan(6); 

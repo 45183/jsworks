@@ -14,7 +14,6 @@
         }
         p{
             text-shadow: 1px 2px 2px #000;
-            /* 가로 세로 번짐정도 색상 */
         }
         p strong{
             color: yellow;
@@ -24,11 +23,10 @@
 </head>
 <body>
     <script>
-        // 1 - 마케팅, 2- 개발, 3 - 디자인
         let session = prompt("관심 세션을 선택해주세요.", "1 - 마케팅, 2- 개발, 3 - 디자인");
 
         switch(session){
-            case "1":                                                                       // prompt 입력창은 문자이므로 "1", 그냥 1 을 사용한경우 디폴트값으로 출력
+            case "1":                                                                   
                 document.write("<p>마케팅 세션은 <strong>201호</strong>에서 진행됩니다.");
                 break;
             case "2":
@@ -41,7 +39,6 @@
                 document.write("<p>세션이 없습니다.");
                 break;
         }
-
     </script>
 </body>
 </html>

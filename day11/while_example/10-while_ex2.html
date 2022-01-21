@@ -8,26 +8,10 @@
 </head>
 <body>
     <script>
-        // 1부터 10까지의 합계
-        // 입력 (초기값)
         let i = 0, sum_v = 0;
-        // var로 할 경우 뒤에 var i를 넣어도 오류가 나지 않음 : 비정상
-        // let으로 하면 오류 발생 - let 사용 권장
 
-        // sum_v += 1;
-        // sum_v += 2;
-        // sum_v += 3;
-        // sum_v += 4;
-        // sum_v += 5;
-        // sum_v += 6;
-        // sum_v += 7;
-        // sum_v += 8;
-        // sum_v += 9;
-        // sum_v += 10;        
-
-        // 반복 연산
-        while(i < 10){      // 조건값, 종료값
-            i += 1;     // i++, 증강값
+        while(i < 10){    
+            i += 1;   
             sum_v += i;
             console.log("i = " + i + ", sum_v = " + sum_v);
         }

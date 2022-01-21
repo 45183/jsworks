@@ -8,24 +8,16 @@
         <h2>상수 사용하기</h2>
 
         <script>
-            // 원 둘레와 넓이 계산하기
-            // 원 둘레 :  2 * PI * 반지름(radius)
-            // 원 넓이 :  PI * 반지름 * 반지름
-            // 선언과 입력(저장)
             let radius = 5;
             const PI = 3.14;
-            let circle_len = 0.0;       // 실수 초기화
-            let circle_area = 0.0;            // 넓이
+            let circle_len = 0.0;      
+            let circle_area = 0.0;         
 
-            // 연산
-            // PI = 2.14; - 넣을시 계산 자체가 안됨 / 상수는 변경 불가
             circle_len = 2 * PI * radius;
             circle_area = PI * radius * radius;
 
-            // 출력
             document.write("원의 둘레 : " + circle_len.toFixed(2) + "<br>");
             document.write("원의 넓이 : " + circle_area);
-            // toFixed(자리수) : 소수 자리수 정하는 함수 - 사용시 let circle_len;만 하고 초기화 안해도 됨
         </script>
     </body>
 </html>
