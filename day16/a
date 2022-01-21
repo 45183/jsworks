@@ -1,0 +1,22 @@
+객체(object)
+- 모든 자료형을 포함할 수 있음 : 복합자료형
+- 함수도 포함 가능
+
+1. 내장 객체(클래스)
+- Math : Math.random()              - 정적 클래스
+- Date : const now = new Date()     - 동적 클래스
+2. 사용자 객체
+- 생성자 함수
+
+- function Car(brand, cc, color){
+    this.brand = brand;
+    this.cc = cc;
+    this.colr = color;
+
+    this.drive = function(){
+        console.log("차가 달린다");
+    }
+}
+let car1 = new Car("Sonata", 2000, "white")
+car1.brand;
+car1.drive();
