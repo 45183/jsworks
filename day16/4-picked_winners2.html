@@ -29,7 +29,8 @@
         let member = prompt("전체 응모자 수"); 
         let win = prompt("당첨자 수");
         // let winner = new Array(win);        // win에 숫자가 들어와야하지만 "숫자"로 들어와서 문자가 됨
-        let winner = new Array(parseInt(win)); // parseInt사용해서 숫자로 바꿔줌
+        // let winner = new Array(parseInt(win)); // parseInt사용해서 숫자로 바꿔줌
+        let winner = new Array(Number(win));        // parseInt로 하면 취소시 입력이 취소되었습니다. 출력이 안됨        Number(12.63) -> 12.63 출력
         
         if(member == null || winner == null){
             document.write("<p>입력이 취소되었습니다.</p>");
@@ -38,9 +39,18 @@
             document.write("<p>전체 응모자 수 : " + member + "명</p>");
             document.write("<p>당첨자 : ");
 
-            // 랜덤 번호 추첨 - 추첨 4번
+            // 랜덤 번호 추첨 - 중복시 재추첨
             for(let i = 0; i < winner.length; i++){
                winner[i] = Math.floor(Math.random() * member) + 1;
+               for(let j = 0; j < i; j++){
+                   if(winner[j] == winner[i]){          // 중복
+                       i--;                             // 삭제 후 다시
+                   }
+               }
+            }
+
+            // 출력
+            for(let i = 0; i < winner.length; i++){
                document.write(winner[i] + "번 ")
             }
         }

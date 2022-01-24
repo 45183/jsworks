@@ -1,0 +1,50 @@
+/* 전체 영역 */
+*{margin: 0; padding: 0;}
+#container{width: 1100px; margin: 0 auto;}
+
+/* header 영역 */
+header{height: 80px; background-color: rgb(154, 195, 91);}
+header #logo{width: 250px; float: left; padding: 15px 25px;}
+header #logo a{text-decoration: none; color: yellow;}
+header nav{width: 750px; float: right;}
+header #topMenu{list-style: none; text-align: right; margin-right: 40px;}
+header #topMenu li{display: inline-block; margin: 15px; padding: 15px;}
+header #topMenu li a{text-decoration: none; color: white;}
+header #topMenu li a:hover{color: #2fd2fd;}
+
+/* index 스타일 */
+#intro{height: 1000px;}
+#intro #heading h1{height: 120px; background: #eee; text-align: center; font-size: 2.5em; line-height: 100px; padding: 20px;}    /* line-height : 줄 맞출때 */
+#intro #img_show{height: 600px; margin-top: 50px; text-align: center;}
+#intro #img_show img{border-radius: 10px; margin-bottom: 50px;}
+
+/* incheon 스타일 */
+#contents{width: 900px; margin: 30px auto;}
+#contents section{margin: 30px auto;}
+#contents section div{margin: 20px auto;}
+#contents section p{line-height: 2em;}
+#contents #healing{height: 300px;}
+#contents #healing img{float: left; margin-right: 15px; border-radius: 10px;}
+#contents #activity{height: 300px;}
+#contents #activity img{float: left; margin-right: 15px; border-radius: 10px;}
+#contents #sightseeing{height: 300px;}
+#contents #sightseeing ul li{margin: 10px 20px; list-style: square;}
+#contents #sightseeing ul li a{text-decoration: none; color: #000;}
+#contents #sightseeing ul li a:hover{text-decoration: underline;}
+
+/* product 스타일 */
+#product{width: 900px; margin: 10px auto;}
+#product h2{margin: 15px 0;}
+#product p{line-height: 2em;}
+#product section{margin: 10px auto; border: 1px solid #ccc; padding: 20px 50px;}
+#product #description{border-top-left-radius: 30px; border-top-right-radius: 30px;}
+#product #receipe ol{padding-left: 20px; margin-top: 10px;}
+#product #receipe ol li{line-height: 2em;}
+#product #package{border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;}
+#product table, th, td{border: 1px solid #ccc; border-collapse: collapse; padding: 10px 20px; text-align: center;}
+
+/* footer 영역 */
+footer{height: 100px; margin-top: 100px; border-top: 2px solid #222;}
+footer #bottomMenu{list-style: none; margin: 10px 10px 10px 50px;}
+footer #bottomMenu li{display: inline-block; margin: 10px 0; border-right: 1px solid #ccc; padding: 0px 10px;}
+footer #bottomMenu li a{text-decoration: none; color: #444;}
